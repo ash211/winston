@@ -14,7 +14,7 @@ var path = require('path'),
     helpers = require('./helpers'),
     transport = require('./transports/transport');
 
-vows.describe('winton/logger').addBatch({
+vows.describe('winston/logger').addBatch({
   "An instance of winston.Logger": {
     topic: new (winston.Logger)({ transports: [new (winston.transports.Console)({ level: 'info' })] }),
     "should have the correct methods / properties defined": function (logger) {
